@@ -377,8 +377,19 @@ return [temp1,temp2];
 
 
 -------------------------------------------------------------------------------------------------------
+//1266. Minimum Time Visiting All Points
+var minTimeToVisitAllPoints = function(points) {
+    let maxi=Number.MIN_SAFE_INTEGER;
+    let c=0;
+    for(let i=1;i<points.length;i++){
+        let x=points[i][0]-points[i-1][0];
+        let y=points[i][1]-points[i-1][1];
+        c+=Math.max(Math.abs(x),Math.abs(y));
+    }
+    return c;
+};
 
-
+-------------------------------------------------------------------------------------------------
 
 
 
