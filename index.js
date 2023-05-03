@@ -352,6 +352,34 @@ console.log(welcome("rahul garg", 23));
 
 
 
+----------------------------------------------------------------------------------------------------------------
+2215. Find the Difference of Two Arrays
+
+var findDifference = function(nums1, nums2) {
+let temp1=[] 
+let temp2=[]
+let s1=new Set(nums1)
+let s2=new Set(nums2)
+for(let i of s1){
+    if(!s2.has(i)){
+        temp1.push(i)
+    }
+}
+for(let i of s2){
+    if(!s1.has(i)){
+        temp2.push(i)
+    }
+}
+return [temp1,temp2];   
+
+    
+};
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
