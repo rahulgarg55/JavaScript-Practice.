@@ -331,6 +331,28 @@ DOM is a programming API for HTML and XML.
 -------------------------------------------------------------------------------------------------------------------
 
 
+Arrow function in JS
+// no need to write function now.
+let hello=()=> console.log("hello");
+//to call the function 
+hello();
+
+// OLD WAY
+let welcome=function(name){
+      return `hello & welcome ${name}`;
+}
+console.log(welcome());        
+
+
+//NEW WAY 
+let welcome=(name,age) => {
+  return `hello & welcome ${name}-${age}`;
+}
+console.log(welcome("rahul garg", 23));
+
+
+
+
 
 
 
