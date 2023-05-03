@@ -309,9 +309,26 @@ DOM is a programming API for HTML and XML.
 
 
 
+---------------------------------------------------------------------------------
+     //error in this
+      var findLeastNumOfUniqueInts = function(nums, k) {
+      const m=new Map(); 
+        for(const i of nums){
+            m.set(i,(m.get(i)||0)+1);
+        }
+        
+        const pq=new PriorityQueue();
+        for(const [key,value] of m){
+            pq.push(value);
+        }
+           while(k>0){
+               k-=pq.top();
+               if(k>=0)pq.pop();
+           }
+           return pq.size();
+};
 
-
-
+-------------------------------------------------------------------------------------------------------------------
 
 
 
