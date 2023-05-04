@@ -391,7 +391,31 @@ var minTimeToVisitAllPoints = function(points) {
 
 -------------------------------------------------------------------------------------------------
 
+const n = words.length;
+  const m = new Map();
+  
+  for (const word of words) {
+    for (const char of word) {
+      if (!m.has(char)) {
+        m.set(char, 1);
+      } else {
+        m.set(char, m.get(char) + 1);
+      }
+    }
+  }
+  
+  for (const [char, count] of m) {
+    if (count % n !== 0) {
+      return false;
+    }
+  }
+  
+  return true;
 
+----------------------------------------------------------------------------------------------------------------
+
+      
+     
 
 
 
