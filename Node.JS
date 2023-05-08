@@ -38,6 +38,14 @@ module.exports=getNotes
   //goinf to inititialize npm in our project
   
   //JSON- JS object notation 
+    
+    // npm i validator installs-> will get node modules directory now.
+    
+ 
+ //isEmail(str [, options])-> important one.
+    
+    
+    
   
   
   
