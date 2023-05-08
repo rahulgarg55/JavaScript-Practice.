@@ -80,7 +80,46 @@ console.log(chalk.blue('rahul garg')); // it will print msg in blue color.
     
     //console.log(process.argv[2]) //argument vector
     now if we pass node app.js rahul garg in terminal it will print rahul
+// process is a big object
+    
+    const chalk=require('chalk');
+// const getNotes=require('./notes.js');
 
+// const msg=getNotes()
+const greemsg=chalk.red('Welcome')
+// console.log(msg)
+console.log(chalk.blue('rahul garg'));
+console.log(greemsg);
+//use chalk library to prject
+//use it to generate /success/messages of color greeen
+// it will return true. 
+console.log(process.argv) //argument vector
+
+
+------------------------------------------------------------------
+
+const command=process.argv[2]
+
+if(command==='add'){
+    console.log('adding notes')
+}else if(command==='remove'){
+    console.log('removing notes')
+}
+
+//if we print node app.js add then we will get adding notes else we will get removing notes
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
     
     
