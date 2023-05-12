@@ -450,9 +450,12 @@ XML->extensible markup language
 markup language
 Heavier
 supports cmnst and namespaces.
+
+//Javascript Object.
 var person ={firstname:"rahul",lastName:"garg:);
          alert(person.firstName+""+person.lastName);    
 --------------------------------------
+//String number boolean array object null datas are allowed in JSON
 
 
 
