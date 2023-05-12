@@ -398,10 +398,61 @@ fs.writeFileSync('1-JSON.json', bookJSON)
 // Stringify rhe changed object and overwrite the original data
 
 --------------------------------------------------------------------------------------------------
+//Asynchoronous
+
+Ajax is Asynchronous Javascript and XML. Ajax is a user experience
+we can communicate with server without page reload using Ajax.
+
+Types of Ajax
+//Asynchronous Ajax->doesnt wait. 
+//Synchornous Ajax->wait until one task doesnt get completed.
+Page reaload ni hota, URls ni banenge.
+example-> facebook like and comments.
+country state and ciy dropdown.
+
+
+function click_here(){
+    jQuery.ajax({
+        url:'get.php',
+        type:'post',
+        success: funciton (result){
+        alert(result);
+}
+}
+});
 
 
 
+<php
+echo "Hello1";
+?>
+ 
+------------------------------------------------------------------
+const request = require('request');
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=d28f8181779e849afe31a5057723352e';
+request({url:url, json:true}, (error,response) => {
+  console.log(response.body.main)
+})
+-------------------------------------------------------
+    const request = require('request');
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=d28f8181779e849afe31a5057723352e';
+request({url:url, json:true}, (error,response) => {
+  console.log('it is currently'+response.body.currently.temperature+'degrees out.There is a'+response.body.currently.precipProbability+'%chance of rain')
+})
 
+------------------------------
+JSON -> JavaScript object notation
+text based format
+Light wight
+does not support commextns and namespaces
+
+XML->extensible markup language
+markup language
+Heavier
+supports cmnst and namespaces.
+var person ={firstname:"rahul",lastName:"garg:);
+         alert(person.firstName+""+person.lastName);    
+--------------------------------------
 
 
 
