@@ -456,8 +456,12 @@ var person ={firstname:"rahul",lastName:"garg:);
          alert(person.firstName+""+person.lastName);    
 --------------------------------------
 //String number boolean array object null datas are allowed in JSON
-
-
+..JSON is language independent
+Human Readable Format
+Easy to organize and access.
+light-weight.
+//cannot use it for transfer video, audio, images.
+//API 
 
 
 
