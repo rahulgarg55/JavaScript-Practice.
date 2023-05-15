@@ -476,7 +476,147 @@ add(1,4,(sum)=>{
 })
  
 
+-----------------------------------------------------------------
+    //Object property shorthand
+const name='rahul'
+const userAge=24
 
+const user={
+  name:name,
+  age: userAge,
+  location: 'Mohali'
+}
+console.log(user)
+
+-------------------------------------------
+    //Object Destructuring
+    
+    
+    //Diff bw http and https.
+    
+    
+    //Object property shorthand
+const name='rahul'
+const userAge=24
+
+const user={
+  name:name,
+  age: userAge,
+  location: 'Mohali'
+}
+console.log(user)
+
+//Object Destructuring
+const product={
+    label:'Red notebook', // this all are properities
+    price:3,
+    stock:201,
+    salePrice:undefined
+}
+// const label=product.label
+// const stock=product.stock
+
+// const {label:productLabel,stock,rating}=product
+// console.log(productLabel)
+// console.log(stock)
+// console.log(rating)
+
+const transaction =(type,{label,stock})=>{
+    console.log(type,label,stock)
+    const{label}=myProduct;
+}
+transaction('order',product)
+-----------------------------------------------------------------
+//https.request(options[,callback])
+-------------------------------------------------------------------------------
+    
+    app.js
+
+  
+// // console.log("this is a test");
+// // setTimeout(()=>{
+// // for(let index=0; index< 4005;index++){
+// //   const element=index;
+// //   console.log("this is a test element"+index);
+// //    // + is to concetante string to integer index 
+// // }
+// // },100);
+// // console.log("done printing result");
+// //  // now we have made  this asynchronous by setting timeout to  the cosnsole.log function
+// function x(){   
+//   var i=1;
+//   for(var i=1;i<=10;i++){
+//   setTimeout(function(){
+//     console.log("i");
+//   },i*1000);
+// }
+//   console.log("done printing result");
+//   }
+//   x(); 
+  
+//   //first we w ill get done printing results and then i after 4 seconds.
+
+// const x=1;
+// const y=x+2;
+// console.log('sum is' +y);
+// //+ is to concetanate the results.
+
+// const listLocations=(locations)=>{
+//   locations.forEach((location)=>{
+//    console.log(location)
+// })
+// }
+// const myLocations=['rahul','garg']
+// listLocations(myLocations)
+
+//JS is itself a single threaded programming language.
+//CALL STACK
+
+
+//console.log('rahul')
+//anonymous('rahul)
+// forEach(...)
+// listlocation([..const request = require('request');
+// const request=require('request')
+//   const url='https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=9a52a531aa1283ee9abad81b50224775'
+// request({url:url},(error,response)=> {
+// 	// if (error) throw new Error(error);
+//   const data=JSON.parse(response.body);
+//   console.log(data);
+// 	console.log(response);
+// })
+const request = require('request');
+const location = process.argv[2]; // to Read location value that was passed as the second command line argument
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=d28f8181779e849afe31a5057723352e`;
+
+request({url:url, json:true}, (error,response) => {
+  console.log(response.body)
+}); //now we are taking input in terminal(city)
+
+const express=require('express');
+const app=express();
+app.get('',(req,res) => {
+  res.send('heello express')
+})
+//app.com
+//app.com/help
+//app.com/about
+
+app.listen(3000,()=>{
+  console.log('server is listening on port 3000');
+})
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
