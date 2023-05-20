@@ -606,6 +606,36 @@ app.listen(3000,()=>{
   console.log('server is listening on port 3000');
 })
 
+---------------------------------------------------------------
+Rest API's
+
+Representaitonal state transer application programming interface
+
+Rest+API = Restful API 
+
+SOAP API.................
+ 
+It helps to communicate with each other...API to acess and use data
+Rest is not a programming language.
+
+GET/POST
+PUT/Delete.
+
+JSON/XML.
+CREATE  Read Update DELETE.
+
+ PUT PATCH 
+ DELETE
+ 
+ /api/createUser
+/api/readUsers
+/api
+
+
+
+
+
+
 
 
 
